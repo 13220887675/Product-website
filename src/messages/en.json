@@ -1,0 +1,147 @@
+{
+  "Metadata": {
+    "Home": {
+      "title": "Product Showcase - Professional Solutions",
+      "description": "Discover our innovative products and solutions that bring more possibilities to your business."
+    }
+  },
+  "Navigation": {
+    "logo": "Product Showcase",
+    "home": "Home",
+    "products": "Products",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "openMenu": "Open Menu",
+    "closeMenu": "Close Menu"
+  },
+  "Footer": {
+    "company": "About Us",
+    "description": "Your trusted partner in professional solutions.",
+    "products": "Products",
+    "allProducts": "All Products",
+    "resources": "Resources",
+    "blog": "Blog",
+    "contact": "Contact",
+    "address": "123 Business Street, City, Country",
+    "phone": "+1 234 567 890",
+    "email": "contact@yourcompany.com",
+    "copyright": "All rights reserved"
+  },
+  "ThemeSwitcher": {
+    "toggleTheme": "Toggle Theme"
+  },
+  "LanguageSwitcher": {
+    "switchLanguage": "Switch Language"
+  },
+  "Home": {
+    "hero": {
+      "title": "Innovative Products, Smart Choice",
+      "description": "Explore our product line and discover professional solutions that fit your needs.",
+      "cta": "Learn More"
+    },
+    "products": {
+      "title": "Featured Products",
+      "description": "Browse our star products and see how they meet your needs.",
+      "viewAll": "View All Products"
+    },
+    "blog": {
+      "title": "Latest Updates",
+      "description": "Learn about industry trends and product usage tips.",
+      "viewAll": "View All Articles"
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Find answers to your most important questions."
+    },
+    "inquiry": {
+      "title": "Contact Us",
+      "description": "Have questions? Feel free to reach out."
+    }
+  },
+  "Products": {
+    "features": "Features",
+    "specifications": "Specifications",
+    "inquiryTitle": "Product Inquiry",
+    "product1": {
+      "name": "Smart Industrial Controller",
+      "description": "Advanced industrial automation control system for production lines and industrial equipment",
+      "features": "High-precision control|Real-time monitoring|Remote operation|Data analysis|Fault prediction|Modular design",
+      "specifications": "Processor: ARM Cortex-A53|Memory: 4GB DDR4|Storage: 32GB eMMC|Interfaces: 4×RS485, 2×CAN, 4×DI, 4×DO|Operating temperature: -20℃~70℃|Protection: IP65"
+    },
+    "product2": {
+      "name": "Industrial IoT Gateway",
+      "description": "High-performance industrial IoT data collection and transmission gateway supporting multiple protocols and interfaces",
+      "features": "Multi-protocol support|Edge computing|Security encryption|Remote management|Data caching|System monitoring",
+      "specifications": "CPU: Quad-core 1.5GHz|Memory: 2GB|Storage: 16GB|Network: 2×Gigabit Ethernet, Wi-Fi, 4G|Protocols: Modbus, OPC UA, MQTT|Power: 9-36V DC"
+    },
+    "product3": {
+      "name": "Smart Sensor Kit",
+      "description": "Industrial-grade smart sensor system including temperature, humidity, pressure, and various other sensors",
+      "features": "High-precision measurement|Wireless transmission|Low power design|Plug and play|Auto calibration|Dust and water resistant",
+      "specifications": "Measurement range: Temperature -40℃~120℃, Humidity 0-100%RH|Accuracy: Temperature ±0.3℃, Humidity ±2%RH|Sampling rate: 1Hz-10Hz|Communication: ZigBee/LoRa|Battery life: >2 years|Protection: IP67"
+    },
+    "learnMore": "Learn More"
+  },
+  "Blog": {
+    "by": "by",
+    "shareTitle": "Share Article",
+    "post1": {
+      "title": "Smart Manufacturing Solutions in Industry 4.0",
+      "excerpt": "Exploring smart manufacturing trends and solutions in the Industry 4.0 era",
+      "content": "In the Industry 4.0 era, smart manufacturing is reshaping traditional industrial production and management methods.|Through IoT technology, artificial intelligence, and big data analytics, enterprises can achieve comprehensive digitalization and intelligence of production processes.|Our smart industrial controllers and IoT gateway products are developed specifically to meet this transformation need.|By deploying these smart devices, enterprises can establish a complete digital factory system and achieve significant improvements in production efficiency.",
+      "date": "2023-12-01",
+      "author": "Engineer Zhang",
+      "tags": "Industry 4.0,Smart Manufacturing,IoT,Digital Transformation"
+    },
+    "post2": {
+      "title": "Industrial IoT Security Protection Guide",
+      "excerpt": "Detailed analysis of security threats and protection measures in industrial IoT environments",
+      "content": "With the rapid development of industrial IoT, security issues have become a key concern for enterprises.|Industrial control systems face security threats from network attacks, data breaches, and more.|This article will detail common security risks in industrial IoT environments and provide practical protection recommendations.|Through the adoption of encrypted transmission, access control, and other security measures, enterprises can effectively protect their industrial IoT systems.",
+      "date": "2023-12-05",
+      "author": "Engineer Li",
+      "tags": "Cybersecurity,IoT,Industrial Control,Security Protection"
+    },
+    "post3": {
+      "title": "Smart Sensor Applications in Industrial Monitoring",
+      "excerpt": "Analyzing innovative applications of smart sensors in industrial monitoring",
+      "content": "Smart sensors, as the perception layer of industrial IoT, play a crucial role in industrial monitoring.|By deploying temperature, humidity, pressure, and various other sensors, enterprises can monitor production environments and equipment status in real-time.|Combined with big data analytics and AI technology, smart sensor systems can predict equipment failures and optimize maintenance schedules.|This article will demonstrate through practical cases how smart sensors help enterprises improve production efficiency and equipment reliability.",
+      "date": "2023-12-10",
+      "author": "Engineer Wang",
+      "tags": "Sensors,Industrial Monitoring,Predictive Maintenance,IoT"
+    },
+    "readMore": "Read More"
+  },
+  "FAQ": {
+    "q1": "How to choose the right product?",
+    "a1": "We recommend selecting products based on your specific needs, budget, and use case. You can check the comparison information on the product details page or contact our customer service team for professional advice.",
+    "q2": "Do products come with warranty?",
+    "a2": "Yes, all our products come with standard warranty coverage. Please refer to the product manual or contact customer service for specific warranty terms and conditions.",
+    "q3": "How to get technical support?",
+    "a3": "You can get technical support through the following channels: 1. Check product documentation; 2. Contact online support; 3. Send email to support; 4. Call technical support hotline.",
+    "q4": "Do you offer customization services?",
+    "a4": "Yes, we provide product customization services. Please use the inquiry form or contact our sales team directly for details.",
+    "q5": "How to track order status?",
+    "a5": "You can check order status in the order center after logging into your account. You can also contact customer service with your order number."
+  },
+  "InquiryForm": {
+    "name": {
+      "label": "Name",
+      "required": "Please enter your name"
+    },
+    "email": {
+      "label": "Email",
+      "required": "Please enter a valid email address"
+    },
+    "company": {
+      "label": "Company",
+      "required": "Please enter company name"
+    },
+    "message": {
+      "label": "Message",
+      "required": "Please enter your message"
+    },
+    "submit": "Send Inquiry",
+    "success": "Thank you for your inquiry. We will contact you soon.",
+    "error": "An error occurred. Please try again."
+  }
+}
