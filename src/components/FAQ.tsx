@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { ChevronDown, ChevronUp } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 interface FAQItem {
   id: number
@@ -51,29 +52,57 @@ export default function FAQ() {
       <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
         {t('title')}
       </h2>
-      {faqs.map((faq) => (
+      {faqs.map((faq, index) => (
         <div
-          key={faq.id}
-          className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden"
+          key={index}
+          className="border-b border-gray-100 dark:border-gray-700 last:border-b-0 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors duration-200"
         >
           <button
-            className="w-full flex justify-between items-center p-4 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700"
-            onClick={() => toggleFAQ(faq.id)}
+            onClick={() => toggleFAQ(index)}
+            className="w-full px-6 py-4 text-left flex justify-between items-center gap-4"
           >
-            <span className="text-left font-medium text-gray-900 dark:text-white">
+            <span className="text-lg font-medium text-gray-900 dark:text-white">
               {faq.question}
             </span>
-            {openId === faq.id ? (
-              <ChevronUp className="h-5 w-5 text-gray-500" />
-            ) : (
-              <ChevronDown className="h-5 w-5 text-gray-500" />
-            )}
+            <motion.div
+              animate={{ rotate: openId === index ? 180 : 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+            >
+              {openId === index ? (
+                <ChevronUp className="h-5 w-5 text-primary" />
+              ) : (
+                <ChevronDown className="h-5 w-5 text-gray-400" />
+              )}
+            </motion.div>
           </button>
-          {openId === faq.id && (
-            <div className="p-4 bg-gray-50 dark:bg-gray-900">
-              <p className="text-gray-600 dark:text-gray-300">{faq.answer}</p>
-            </div>
-          )}
+          <AnimatePresence initial={false}>
+            {openId === index && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ 
+                  height: "auto", 
+                  opacity: 1,
+                  transition: {
+                    height: { duration: 0.3, ease: "easeOut" },
+                    opacity: { duration: 0.3, delay: 0.1 }
+                  }
+                }}
+                exit={{ 
+                  height: 0, 
+                  opacity: 0,
+                  transition: {
+                    height: { duration: 0.3, ease: "easeIn" },
+                    opacity: { duration: 0.2 }
+                  }
+                }}
+                className="overflow-hidden"
+              >
+                <div className="px-6 pb-4 text-gray-600 dark:text-gray-300">
+                  {faq.answer}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       ))}
     </div>
