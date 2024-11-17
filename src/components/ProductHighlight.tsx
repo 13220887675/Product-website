@@ -21,7 +21,7 @@ export default function ProductHighlight({ product, locale }: Props) {
   const imageUrl = product.image || '/images/defaults/default-product.jpg'
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+    <div className="bg-white dark:bg-gray-800 shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden transition-all hover:shadow-lg">
       <div className="relative h-48">
         <Image
           src={imageUrl}
@@ -33,11 +33,11 @@ export default function ProductHighlight({ product, locale }: Props) {
         />
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-semibold mb-2 dark:text-white">{product.name}</h3>
+        <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{product.name}</h3>
         <p className="text-gray-600 dark:text-gray-300 mb-4">{product.description}</p>
         <Link
           href={`/${locale}/products/${product.id}`}
-          className="inline-block bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition-colors"
+          className="inline-block bg-primary hover:bg-primary-dark text-white px-4 py-2 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-800"
         >
           {t.learnMore}
         </Link>

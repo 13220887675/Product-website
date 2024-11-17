@@ -72,6 +72,7 @@
     "postNotFound": "未找到文章"
   },
   "FAQ": {
+    "title": "常见问题解答",
     "q1": "我们的产品有哪些特点？",
     "a1": "我们的产品采用先进的工业自动化技术，具有高精度、可靠性强、易于集成等特点。所有产品都经过严格的质量控制和测试。",
     "q2": "如何选择合适的产品？",
@@ -124,7 +125,13 @@
     "address": "中国某市某区某街123号",
     "phone": "+86 123 4567 8900",
     "email": "contact@yourcompany.com",
-    "copyright": " 2024 企业网站。保留所有权利。"
+    "copyright": " 2024 企业网站。保留所有权利。",
+    "social": {
+      "title": "关注我们",
+      "twitter": "推特",
+      "facebook": "脸书",
+      "instagram": "Instagram"
+    }
   },
   "ThemeSwitcher": {
     "toggleTheme": "切换主题"

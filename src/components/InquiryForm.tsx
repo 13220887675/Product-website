@@ -63,7 +63,7 @@ export default function InquiryForm({ product }: Props) {
             type="text"
             id="name"
             {...register('name')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-800 dark:border-gray-600 dark:text-white"
+            className="mt-1 block w-full border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-800 dark:text-white dark:placeholder-gray-400"
           />
           {errors.name && (
             <p className="mt-1 text-sm text-red-600">{t('name.required')}</p>
@@ -78,7 +78,7 @@ export default function InquiryForm({ product }: Props) {
             type="email"
             id="email"
             {...register('email')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-800 dark:border-gray-600 dark:text-white"
+            className="mt-1 block w-full border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-800 dark:text-white dark:placeholder-gray-400"
           />
           {errors.email && (
             <p className="mt-1 text-sm text-red-600">{t('email.required')}</p>
@@ -93,7 +93,7 @@ export default function InquiryForm({ product }: Props) {
             type="text"
             id="company"
             {...register('company')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-800 dark:border-gray-600 dark:text-white"
+            className="mt-1 block w-full border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-800 dark:text-white dark:placeholder-gray-400"
           />
           {errors.company && (
             <p className="mt-1 text-sm text-red-600">{t('company.required')}</p>
@@ -108,7 +108,7 @@ export default function InquiryForm({ product }: Props) {
             id="message"
             rows={4}
             {...register('message')}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-800 dark:border-gray-600 dark:text-white"
+            className="mt-1 block w-full border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary focus:ring-primary dark:bg-gray-800 dark:text-white dark:placeholder-gray-400"
           />
           {errors.message && (
             <p className="mt-1 text-sm text-red-600">{t('message.required')}</p>
@@ -118,7 +118,7 @@ export default function InquiryForm({ product }: Props) {
         <div>
           <button
             type="submit"
-            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+            className="w-full flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-offset-gray-800"
           >
             {t('submit')}
           </button>

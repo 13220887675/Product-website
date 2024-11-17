@@ -105,7 +105,7 @@ export default async function ProductPage({ params }: Props) {
       <main className="min-h-screen py-16">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="relative h-[400px] rounded-lg overflow-hidden">
+            <div className="relative h-[400px] overflow-hidden">
               <Image
                 src={product.image ? product.image : defaultProductImage}
                 alt={product.name}

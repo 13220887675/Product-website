@@ -1,67 +1,77 @@
-"use client"
+'use client'
 
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 
-export default function FAQ() {
-  const t = useTranslations('FAQ')
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
+interface FAQItem {
+  id: number
+  question: string
+  answer: string
+}
 
-  const faqs = [
+export default function FAQ() {
+  const [openId, setOpenId] = useState<number | null>(null)
+  const t = useTranslations('FAQ')
+
+  const faqs: FAQItem[] = [
     {
       id: 1,
       question: t('q1'),
-      answer: t('a1'),
+      answer: t('a1')
     },
     {
       id: 2,
       question: t('q2'),
-      answer: t('a2'),
+      answer: t('a2')
     },
     {
       id: 3,
       question: t('q3'),
-      answer: t('a3'),
+      answer: t('a3')
     },
     {
       id: 4,
       question: t('q4'),
-      answer: t('a4'),
+      answer: t('a4')
     },
     {
       id: 5,
       question: t('q5'),
-      answer: t('a5'),
-    },
+      answer: t('a5')
+    }
   ]
 
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index)
+  const toggleFAQ = (id: number) => {
+    setOpenId(openId === id ? null : id)
   }
 
   return (
-    <div className="max-w-3xl mx-auto divide-y divide-gray-200 dark:divide-gray-700">
-      {faqs.map((faq, index) => (
-        <div key={faq.id} className="py-6">
+    <div className="max-w-3xl mx-auto space-y-4">
+      <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+        {t('title')}
+      </h2>
+      {faqs.map((faq) => (
+        <div
+          key={faq.id}
+          className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden"
+        >
           <button
-            onClick={() => toggleFAQ(index)}
-            className="flex justify-between items-center w-full text-left"
+            className="w-full flex justify-between items-center p-4 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700"
+            onClick={() => toggleFAQ(faq.id)}
           >
-            <h3 className="text-lg font-medium text-gray-900 dark:text-white">
+            <span className="text-left font-medium text-gray-900 dark:text-white">
               {faq.question}
-            </h3>
-            <span className="ml-6 flex-shrink-0">
-              {openIndex === index ? (
-                <ChevronUp className="h-6 w-6 text-primary dark:text-primary-light" />
-              ) : (
-                <ChevronDown className="h-6 w-6 text-gray-400 dark:text-gray-500" />
-              )}
             </span>
+            {openId === faq.id ? (
+              <ChevronUp className="h-5 w-5 text-gray-500" />
+            ) : (
+              <ChevronDown className="h-5 w-5 text-gray-500" />
+            )}
           </button>
-          {openIndex === index && (
-            <div className="mt-4 pr-12">
-              <p className="text-base text-gray-600 dark:text-gray-300">{faq.answer}</p>
+          {openId === faq.id && (
+            <div className="p-4 bg-gray-50 dark:bg-gray-900">
+              <p className="text-gray-600 dark:text-gray-300">{faq.answer}</p>
             </div>
           )}
         </div>

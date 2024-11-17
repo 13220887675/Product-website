@@ -72,6 +72,7 @@
     "postNotFound": "Post not found"
   },
   "FAQ": {
+    "title": "Frequently Asked Questions",
     "q1": "What are the features of our products?",
     "a1": "Our products use advanced industrial automation technology, featuring high precision, reliability, and easy integration. All products undergo strict quality control and testing.",
     "q2": "How to choose the right product?",
@@ -124,7 +125,13 @@
     "address": "123 Business Street, City, Country",
     "phone": "+1 234 567 890",
     "email": "contact@yourcompany.com",
-    "copyright": " 2024 Corporate Website. All rights reserved."
+    "copyright": " 2024 Corporate Website. All rights reserved.",
+    "social": {
+      "title": "Follow Us",
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "instagram": "Instagram"
+    }
   },
   "ThemeSwitcher": {
     "toggleTheme": "Toggle Theme"

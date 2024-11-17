@@ -63,19 +63,19 @@ export default async function HomePage({ params }: Props) {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-24">
         <div className="container mx-auto px-4">
-          <h1 className="text-5xl font-bold mb-6">{t('title')}</h1>
-          <p className="text-xl mb-8">{t('subtitle')}</p>
-          <button className="bg-white text-blue-600 px-6 py-2 rounded-lg hover:bg-blue-50 transition-colors">
+          <h1 className="text-5xl font-bold mb-6 text-gray-900 dark:text-white">{t('title')}</h1>
+          <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">{t('subtitle')}</p>
+          <button className="bg-white text-blue-600 px-6 py-2 hover:bg-blue-50 transition-colors">
             {t('cta')}
           </button>
         </div>
       </section>
 
       {/* Featured Products */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8">{t('featuredProducts')}</h2>
-          <p className="text-gray-600 mb-8">{t('featuredProductsDescription')}</p>
+          <h2 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">{t('featuredProducts')}</h2>
+          <p className="text-gray-600 dark:text-gray-300 mb-8">{t('featuredProductsDescription')}</p>
           <div className="grid md:grid-cols-3 gap-8">
             {featuredProducts.map((product) => (
               <ProductHighlight key={product.id} product={product} locale={params.locale} />
@@ -92,8 +92,8 @@ export default async function HomePage({ params }: Props) {
       {/* Recent Blog Posts */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8">{t('latestBlog')}</h2>
-          <p className="text-gray-600 mb-8">{t('latestBlogDescription')}</p>
+          <h2 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">{t('latestBlog')}</h2>
+          <p className="text-gray-600 dark:text-gray-300 mb-8">{t('latestBlogDescription')}</p>
           <div className="grid md:grid-cols-3 gap-8">
             {recentPosts.map((post) => (
               <BlogPreview key={post.slug} post={post} locale={params.locale} />
@@ -108,10 +108,10 @@ export default async function HomePage({ params }: Props) {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold mb-8">{t('faq')}</h2>
-          <p className="text-gray-600 mb-8">{t('faqDescription')}</p>
+          <h2 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">{t('faq')}</h2>
+          <p className="text-gray-600 dark:text-gray-300 mb-8">{t('faqDescription')}</p>
           <FAQ />
         </div>
       </section>
@@ -119,8 +119,8 @@ export default async function HomePage({ params }: Props) {
       {/* Contact Form */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8">{t('contact')}</h2>
-          <p className="text-gray-600 mb-8">{t('contactDescription')}</p>
+          <h2 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">{t('contact')}</h2>
+          <p className="text-gray-600 dark:text-gray-300 mb-8">{t('contactDescription')}</p>
           <InquiryForm />
         </div>
       </section>

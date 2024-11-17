@@ -52,15 +52,15 @@ export default async function ProductsPage({ params }: Props) {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-8">{t('pageTitle')}</h1>
+      <h1 className="text-4xl font-bold mb-8 text-gray-900 dark:text-white">{t('pageTitle')}</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {products.map((product, index) => (
           <Link
             key={product.id}
             href={`/${params.locale}/products/${product.id}`}
-            className="group"
+            className="group bg-white dark:bg-gray-800 p-6 rounded shadow-sm hover:shadow-md transition-shadow"
           >
-            <div className="relative h-64 mb-4 overflow-hidden rounded-lg">
+            <div className="relative h-64 mb-4 overflow-hidden">
               <Image
                 src={product.image || defaultProductImage}
                 alt={product.name}
@@ -70,7 +70,7 @@ export default async function ProductsPage({ params }: Props) {
                 priority={index < 3}
               />
             </div>
-            <h2 className="text-xl font-semibold mb-2">{product.name}</h2>
+            <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{product.name}</h2>
             <p className="text-gray-600 dark:text-gray-300">
               {product.description}
             </p>

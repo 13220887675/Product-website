@@ -48,24 +48,24 @@ export default async function BlogPage({ params }: { params: { locale: string } 
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-8">{t('pageTitle')}</h1>
+      <h1 className="text-4xl font-bold mb-8 text-gray-900 dark:text-white">{t('pageTitle')}</h1>
       <div className="space-y-8">
         {posts.map(post => (
           <article 
             key={post.slug}
-            className="bg-white rounded-lg shadow-lg p-6 transition-transform duration-300 hover:scale-[1.02]"
+            className="bg-white dark:bg-gray-800 shadow-lg p-6 transition-transform duration-300 hover:scale-[1.02]"
           >
             <Link href={`/${params.locale}/blog/${post.slug}`} className="block group">
-              <h2 className="text-2xl font-semibold mb-2 group-hover:text-blue-600">
+              <h2 className="text-2xl font-semibold mb-2 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400">
                 {post.title}
               </h2>
-              <div className="text-sm text-gray-500 mb-4">
+              <div className="text-sm text-gray-500 dark:text-gray-400 mb-4">
                 <span>{format(new Date(post.date), 'PPP', { locale: dateLocale })}</span>
                 <span className="mx-2">•</span>
                 <span>{post.author}</span>
               </div>
-              <p className="text-gray-600 mb-4">{post.excerpt}</p>
-              <div className="text-blue-600 group-hover:text-blue-800">
+              <p className="text-gray-600 dark:text-gray-300 mb-4">{post.excerpt}</p>
+              <div className="text-blue-600 dark:text-blue-400 group-hover:text-blue-800 dark:group-hover:text-blue-300">
                 {t('readMore')} →
               </div>
             </Link>

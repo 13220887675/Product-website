@@ -88,7 +88,7 @@ export default async function BlogPostPage({ params }: Props) {
     <main className="min-h-screen py-16">
       <article className="container mx-auto px-4 max-w-4xl">
         {post.image && (
-          <div className="relative h-[400px] rounded-lg overflow-hidden mb-8">
+          <div className="relative h-[400px] overflow-hidden mb-8">
             <Image
               src={post.image || '/images/defaults/default-blog.jpg'}
               alt={post.title}
@@ -120,7 +120,7 @@ export default async function BlogPostPage({ params }: Props) {
             {post.tags.map((tag) => (
               <span
                 key={tag}
-                className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-300"
+                className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-sm text-gray-700 dark:text-gray-300"
               >
                 {tag}
               </span>
