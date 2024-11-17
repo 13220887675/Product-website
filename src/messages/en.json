@@ -1,164 +1,135 @@
 {
   "Metadata": {
-    "titleTemplate": "%s | Your Company",
-    "defaultTitle": "Your Company - Industrial Products Manufacturer",
+    "titleTemplate": "%s | Corporate Website",
+    "defaultTitle": "Products | Corporate Website",
+    "defaultDescription": "Explore our innovative product line",
+    "defaultKeywords": "products,innovation,solutions",
+    "blogTitle": "Blog | Corporate Website",
+    "blogDescription": "Latest industry insights and updates",
+    "productsTitle": "Product Line | Corporate Website",
+    "productsDescription": "Browse our complete product catalog",
     "description": "Leading manufacturer of high-quality industrial products and solutions",
-    "siteName": "Your Company",
-    "Home": {
-      "title": "Your Company - Industrial Products Manufacturer",
-      "description": "Welcome to Your Company - Leading manufacturer of high-quality industrial products and solutions"
-    }
+    "siteName": "Your Company"
+  },
+  "Layout": {
+    "title": "Product Showcase Website",
+    "description": "Explore our innovative product line",
+    "keywords": "products,innovation,solutions",
+    "siteName": "Corporate Website",
+    "siteDescription": "Leading Provider of Industrial Automation Solutions"
   },
   "Navigation": {
     "logo": "Product Showcase",
     "home": "Home",
     "products": "Products",
     "blog": "Blog",
+    "about": "About Us",
+    "contact": "Contact",
     "faq": "FAQ",
     "openMenu": "Open Menu",
     "closeMenu": "Close Menu"
   },
+  "Home": {
+    "title": "Innovative Product Solutions",
+    "subtitle": "The Best Choice for Your Business",
+    "cta": "Learn More",
+    "featuredProducts": "Featured Products",
+    "featuredProductsDescription": "Explore our most popular product line",
+    "featuredProductsViewAll": "View All Products",
+    "latestBlog": "Latest Blog Posts",
+    "latestBlogDescription": "Stay updated with industry insights",
+    "latestBlogViewAll": "Read More Articles",
+    "faq": "Frequently Asked Questions",
+    "faqDescription": "Find answers to common questions about our products",
+    "contact": "Contact Us",
+    "contactDescription": "Have questions? Get in touch with us"
+  },
+  "Products": {
+    "title": "Product Catalog",
+    "description": "Browse our complete product line",
+    "viewDetails": "View Details",
+    "category": "Category",
+    "allCategories": "All Categories",
+    "searchPlaceholder": "Search products...",
+    "noResults": "No products found",
+    "features": "Product Features",
+    "specifications": "Technical Specifications",
+    "inquiryTitle": "Product Inquiry",
+    "pageTitle": "Product Catalog",
+    "pageDescription": "Browse our complete product line"
+  },
+  "Blog": {
+    "title": "Blog Posts",
+    "description": "Latest industry insights and updates",
+    "readMore": "Read More",
+    "category": "Category",
+    "allCategories": "All Categories",
+    "searchPlaceholder": "Search articles...",
+    "noResults": "No articles found",
+    "publishedOn": "Published on",
+    "pageTitle": "Blog Posts",
+    "pageDescription": "Latest industry insights and updates",
+    "postNotFound": "Post not found"
+  },
+  "FAQ": {
+    "q1": "What are the features of our products?",
+    "a1": "Our products use advanced industrial automation technology, featuring high precision, reliability, and easy integration. All products undergo strict quality control and testing.",
+    "q2": "How to choose the right product?",
+    "a2": "You can select products based on your specific application scenarios and requirements. Our technical team is happy to provide professional advice to help you choose the most suitable solution.",
+    "q3": "Is technical support provided?",
+    "a3": "Yes, we provide comprehensive technical support, including product installation, debugging, training, and maintenance services. Our technical team is always available to answer your questions.",
+    "q4": "How to get product quotations?",
+    "a4": "You can get detailed product quotations through the contact form on our website or by directly contacting our sales team. We will provide the most competitive prices based on your specific needs.",
+    "q5": "What is the warranty period?",
+    "a5": "Our products come with a standard one-year warranty covering material and workmanship defects. We also offer extended warranty services."
+  },
+  "InquiryForm": {
+    "title": "Product Inquiry",
+    "description": "Please fill out the form below and we will get back to you shortly",
+    "name": {
+      "label": "Name",
+      "required": "Name is required"
+    },
+    "email": {
+      "label": "Email",
+      "required": "Email is required",
+      "invalid": "Please enter a valid email address"
+    },
+    "company": {
+      "label": "Company Name",
+      "required": "Company name is required"
+    },
+    "message": {
+      "label": "Message",
+      "required": "Message is required"
+    },
+    "submit": "Submit Inquiry",
+    "success": "Submitted successfully! We will contact you soon.",
+    "error": "Submission failed, please try again later.",
+    "defaultMessage": "I am interested in {product}"
+  },
   "Footer": {
-    "company": "About Us",
+    "company": "Company",
+    "about": "About Us",
+    "careers": "Careers",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
     "description": "Your trusted partner in professional solutions.",
     "products": "Products",
     "allProducts": "All Products",
     "resources": "Resources",
     "blog": "Blog",
-    "contact": "Contact",
     "address": "123 Business Street, City, Country",
     "phone": "+1 234 567 890",
     "email": "contact@yourcompany.com",
-    "copyright": "All rights reserved"
+    "copyright": " 2024 Corporate Website. All rights reserved."
   },
   "ThemeSwitcher": {
     "toggleTheme": "Toggle Theme"
   },
   "LanguageSwitcher": {
     "switchLanguage": "Switch Language"
-  },
-  "Home": {
-    "heroTitle": "Leading Industrial Solutions",
-    "heroSubtitle": "Quality Products for Your Business",
-    "heroCta": "Explore Products",
-    "featuredProducts": "Featured Products",
-    "featuredProductsDescription": "Discover our most popular industrial solutions",
-    "featuredProductsViewAll": "View All Products",
-    "latestBlog": "Latest News",
-    "latestBlogDescription": "Stay updated with our latest industry insights",
-    "latestBlogViewAll": "View All Posts",
-    "faqTitle": "Frequently Asked Questions",
-    "faqDescription": "Find answers to common questions about our products and services",
-    "contactTitle": "Contact Us",
-    "contactDescription": "Get in touch with our team for personalized assistance"
-  },
-  "Products": {
-    "pageTitle": "Our Products",
-    "pageDescription": "Browse our complete product catalog",
-    "features": "Features",
-    "specifications": "Specifications",
-    "readMore": "Read More",
-    "learnMore": "Learn More",
-    "inquiryTitle": "Product Inquiry",
-    "productNotFound": "Product Not Found",
-    "product1": {
-      "name": "Smart Industrial Controller",
-      "description": "Advanced control system for industrial automation",
-      "features": "High-precision control|Real-time monitoring|Remote operation|Data analysis|Fault prediction|Modular design",
-      "specifications": "Processor: ARM Cortex-A53|Memory: 4GB DDR4|Storage: 32GB eMMC|Interfaces: 4×RS485, 2×CAN, 4×DI, 4×DO|Operating temperature: -20℃~70℃|Protection: IP65"
-    },
-    "product2": {
-      "name": "IoT Gateway",
-      "description": "Industrial-grade IoT data collection and transmission gateway",
-      "features": "Multi-protocol support|Edge computing|Security encryption|Remote management|Data caching|System monitoring",
-      "specifications": "CPU: Quad-core 1.5GHz|Memory: 2GB|Storage: 16GB|Network: 2×Gigabit Ethernet, Wi-Fi, 4G|Protocols: Modbus, OPC UA, MQTT|Power: 9-36V DC"
-    },
-    "product3": {
-      "name": "Smart Sensor Kit",
-      "description": "High-precision sensor system for industrial monitoring",
-      "features": "High-precision measurement|Wireless transmission|Low power design|Plug and play|Auto calibration|Dust and water resistant",
-      "specifications": "Measurement range: Temperature -40℃~120℃, Humidity 0-100%RH|Accuracy: Temperature ±0.3℃, Humidity ±2%RH|Sampling rate: 1Hz-10Hz|Communication: ZigBee/LoRa|Battery life: >2 years|Protection: IP67"
-    }
-  },
-  "Blog": {
-    "pageTitle": "Blog Posts",
-    "pageDescription": "Industry insights and professional perspectives",
-    "by": "by",
-    "shareTitle": "Share Article",
-    "readMore": "Read More",
-    "postNotFound": "Blog Post Not Found",
-    "post1": {
-      "title": "Smart Manufacturing Solutions in Industry 4.0",
-      "excerpt": "Exploring smart manufacturing trends and solutions in the Industry 4.0 era",
-      "content": "In the Industry 4.0 era, smart manufacturing is reshaping traditional industrial production and management methods.|Through IoT technology, artificial intelligence, and big data analytics, enterprises can achieve comprehensive digitalization and intelligence of production processes.|Our smart industrial controllers and IoT gateway products are developed specifically to meet this transformation need.|By deploying these smart devices, enterprises can establish a complete digital factory system and achieve significant improvements in production efficiency.",
-      "date": "2023-12-01",
-      "author": "Engineer Zhang"
-    },
-    "post2": {
-      "title": "IoT Gateway Applications in Smart Factories",
-      "excerpt": "How IoT gateways are enabling smart factory transformations",
-      "content": "IoT gateways play a crucial role in smart factory construction.|They serve as the bridge between field devices and cloud platforms, enabling seamless data collection and transmission.|Our IoT gateway products provide comprehensive protocol support and edge computing capabilities.|Through practical case studies, we'll explore how IoT gateways help enterprises achieve digital transformation.",
-      "date": "2023-12-05",
-      "author": "Engineer Li"
-    },
-    "post3": {
-      "title": "Industrial Sensor Technology Trends",
-      "excerpt": "Latest developments in industrial sensor technology",
-      "content": "Industrial sensors are the foundation of smart manufacturing.|Modern sensor technology combines high precision with intelligent features.|Our smart sensor kit integrates multiple sensing capabilities with wireless communication.|This article analyzes current trends in sensor technology and their industrial applications.",
-      "date": "2023-12-10",
-      "author": "Engineer Wang"
-    }
-  },
-  "FAQ": {
-    "q1": "How to choose the right product?",
-    "a1": "We recommend selecting products based on your specific needs, budget, and use case. You can check the comparison information on the product details page or contact our customer service team for professional advice.",
-    "q2": "Do products come with warranty?",
-    "a2": "Yes, all our products come with standard warranty coverage. Please refer to the product manual or contact customer service for specific warranty terms and conditions.",
-    "q3": "How to get technical support?",
-    "a3": "You can get technical support through the following channels: 1. Check product documentation; 2. Contact online support; 3. Send email to support; 4. Call technical support hotline.",
-    "q4": "Do you offer customization services?",
-    "a4": "Yes, we provide product customization services. Please use the inquiry form or contact our sales team directly for details.",
-    "q5": "How to track order status?",
-    "a5": "You can check order status in the order center after logging into your account. You can also contact customer service with your order number."
-  },
-  "InquiryForm": {
-    "defaultMessage": "Please fill in your inquiry details below",
-    "title": "Product Inquiry",
-    "name": "Your Name",
-    "email": "Your Email",
-    "message": "Message",
-    "submit": "Send Inquiry",
-    "name": {
-      "label": "Name",
-      "required": "Please enter your name"
-    },
-    "email": {
-      "label": "Email",
-      "required": "Please enter a valid email address"
-    },
-    "company": {
-      "label": "Company",
-      "required": "Please enter company name"
-    },
-    "message": {
-      "label": "Message",
-      "required": "Please enter your message"
-    },
-    "success": "Thank you for your inquiry. We will contact you soon.",
-    "error": "An error occurred. Please try again."
-  },
-  "Index": {
-    "title": "Welcome to Our Product Website",
-    "description": "Discover our innovative products"
-  },
-  "Layout": {
-    "siteName": "Product Website",
-    "siteDescription": "Your trusted source for quality products",
-    "navigation": {
-      "home": "Home",
-      "products": "Products",
-      "about": "About",
-      "contact": "Contact"
-    }
   }
 }

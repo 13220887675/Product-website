@@ -1,172 +1,135 @@
 {
   "Metadata": {
-    "titleTemplate": "%s | 您的公司",
-    "defaultTitle": "您的公司 - 工业产品制造商",
-    "description": "领先的高品质工业产品和解决方案制造商",
+    "titleTemplate": "%s | 企业网站",
+    "defaultTitle": "产品 | 企业网站",
+    "description": "高品质工业产品和解决方案的领先制造商",
     "siteName": "您的公司",
-    "Home": {
-      "title": "您的公司 - 工业产品制造商",
-      "description": "欢迎访问您的公司 - 领先的高品质工业产品和解决方案制造商"
-    }
+    "defaultDescription": "探索我们的创新产品线",
+    "defaultKeywords": "产品,创新,解决方案",
+    "blogTitle": "博客 | 企业网站",
+    "blogDescription": "最新行业见解和更新",
+    "productsTitle": "产品线 | 企业网站",
+    "productsDescription": "浏览我们完整的产品目录"
+  },
+  "Layout": {
+    "title": "产品展示网站",
+    "description": "探索我们的创新产品线",
+    "keywords": "产品,创新,解决方案",
+    "siteName": "企业官网",
+    "siteDescription": "领先的工业自动化解决方案提供商"
   },
   "Navigation": {
     "logo": "产品展示",
-    "home": "主页",
+    "home": "首页",
     "products": "产品",
     "blog": "博客",
     "faq": "常见问题",
+    "about": "关于我们",
+    "contact": "联系方式",
     "openMenu": "打开菜单",
     "closeMenu": "关闭菜单"
   },
+  "Home": {
+    "title": "创新产品解决方案",
+    "subtitle": "您企业的最佳选择",
+    "cta": "了解更多",
+    "featuredProducts": "精选产品",
+    "featuredProductsDescription": "探索我们最受欢迎的产品线",
+    "featuredProductsViewAll": "查看所有产品",
+    "latestBlog": "最新博客文章",
+    "latestBlogDescription": "获取最新行业见解",
+    "latestBlogViewAll": "阅读更多文章",
+    "faq": "常见问题",
+    "faqDescription": "查找关于我们产品的常见问题解答",
+    "contact": "联系我们",
+    "contactDescription": "有问题？请与我们联系"
+  },
+  "Products": {
+    "title": "产品目录",
+    "description": "浏览我们完整的产品线",
+    "viewDetails": "查看详情",
+    "category": "类别",
+    "allCategories": "所有类别",
+    "searchPlaceholder": "搜索产品...",
+    "noResults": "未找到产品",
+    "features": "产品特点",
+    "specifications": "技术规格",
+    "inquiryTitle": "产品询价",
+    "pageTitle": "产品目录",
+    "pageDescription": "浏览我们完整的产品线"
+  },
+  "Blog": {
+    "title": "博客文章",
+    "description": "最新行业见解和更新",
+    "readMore": "阅读更多",
+    "category": "类别",
+    "allCategories": "所有类别",
+    "searchPlaceholder": "搜索文章...",
+    "noResults": "未找到文章",
+    "publishedOn": "发布于",
+    "pageTitle": "博客文章",
+    "pageDescription": "最新行业见解和更新",
+    "postNotFound": "未找到文章"
+  },
+  "FAQ": {
+    "q1": "我们的产品有哪些特点？",
+    "a1": "我们的产品采用先进的工业自动化技术，具有高精度、可靠性强、易于集成等特点。所有产品都经过严格的质量控制和测试。",
+    "q2": "如何选择合适的产品？",
+    "a2": "您可以根据具体的应用场景和需求选择产品。我们的技术团队很乐意提供专业建议，帮助您选择最适合的解决方案。",
+    "q3": "是否提供技术支持？",
+    "a3": "是的，我们提供全面的技术支持，包括产品安装、调试、培训和维护服务。我们的技术团队随时为您解答问题。",
+    "q4": "如何获取产品报价？",
+    "a4": "您可以通过我们网站上的联系表单或直接联系我们的销售团队获取详细的产品报价。我们将根据您的具体需求提供最具竞争力的价格。",
+    "q5": "产品保修期是多久？",
+    "a5": "我们的产品标准保修期为一年，涵盖材料和工艺缺陷。我们还提供延长保修服务。"
+  },
+  "InquiryForm": {
+    "title": "产品咨询",
+    "description": "请填写以下表单，我们将尽快与您联系",
+    "name": {
+      "label": "姓名",
+      "required": "请输入姓名"
+    },
+    "email": {
+      "label": "电子邮件",
+      "required": "请输入电子邮件",
+      "invalid": "请输入有效的电子邮件地址"
+    },
+    "company": {
+      "label": "公司名称",
+      "required": "请输入公司名称"
+    },
+    "message": {
+      "label": "留言内容",
+      "required": "请输入留言内容"
+    },
+    "submit": "提交咨询",
+    "success": "提交成功！我们将尽快与您联系。",
+    "error": "提交失败，请稍后重试。",
+    "defaultMessage": "我对{product}产品感兴趣"
+  },
   "Footer": {
-    "company": "关于我们",
-    "description": "您值得信赖的专业解决方案伙伴。",
+    "company": "公司",
+    "about": "关于我们",
+    "careers": "招聘信息",
+    "contact": "联系方式",
+    "legal": "法律信息",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "description": "您值得信赖的专业解决方案合作伙伴。",
     "products": "产品",
     "allProducts": "所有产品",
     "resources": "资源",
     "blog": "博客",
-    "contact": "联系我们",
-    "address": "中国某省某市某区商务街123号",
+    "address": "中国某市某区某街123号",
     "phone": "+86 123 4567 8900",
     "email": "contact@yourcompany.com",
-    "copyright": "版权所有"
+    "copyright": " 2024 企业网站。保留所有权利。"
   },
   "ThemeSwitcher": {
     "toggleTheme": "切换主题"
   },
   "LanguageSwitcher": {
     "switchLanguage": "切换语言"
-  },
-  "Home": {
-    "heroTitle": "领先的工业解决方案",
-    "heroSubtitle": "为您的企业提供优质产品",
-    "heroCta": "浏览产品",
-    "featuredProducts": "精选产品",
-    "featuredProductsDescription": "探索我们最受欢迎的工业解决方案",
-    "featuredProductsViewAll": "查看全部产品",
-    "latestBlog": "最新动态",
-    "latestBlogDescription": "了解我们最新的行业见解",
-    "latestBlogViewAll": "查看全部文章",
-    "faqTitle": "常见问题",
-    "faqDescription": "找到关于我们产品和服务的常见问题解答",
-    "contactTitle": "联系我们",
-    "contactDescription": "与我们的团队联系，获取个性化帮助"
-  },
-  "Index": {
-    "title": "欢迎访问我们的产品网站",
-    "description": "探索我们的创新产品"
-  },
-  "Products": {
-    "pageTitle": "我们的产品",
-    "pageDescription": "浏览我们的完整产品目录",
-    "features": "特点",
-    "specifications": "规格",
-    "readMore": "阅读更多",
-    "learnMore": "了解更多",
-    "inquiryTitle": "产品咨询",
-    "productNotFound": "未找到产品",
-    "title": "我们的产品",
-    "description": "浏览我们的产品目录",
-    "readMore": "了解更多",
-    "productNotFound": "未找到产品",
-    "features": "产品特点",
-    "specifications": "产品规格",
-    "inquiryTitle": "产品咨询",
-    "product1": {
-      "name": "智能工业控制器",
-      "description": "先进的工业自动化控制系统",
-      "features": "高精度控制|实时监控|远程操作|数据分析|故障预测|模块化设计",
-      "specifications": "处理器：ARM Cortex-A53|内存：4GB DDR4|存储：32GB eMMC|接口：4×RS485, 2×CAN, 4×DI, 4×DO|工作温度：-20℃~70℃|防护等级：IP65"
-    },
-    "product2": {
-      "name": "物联网网关",
-      "description": "工业级物联网数据采集和传输网关",
-      "features": "多协议支持|边缘计算|安全加密|远程管理|数据缓存|系统监控",
-      "specifications": "CPU：四核1.5GHz|内存：2GB|存储：16GB|网络：2×千兆以太网, Wi-Fi, 4G|协议：Modbus, OPC UA, MQTT|电源：9-36V DC"
-    },
-    "product3": {
-      "name": "智能传感器套件",
-      "description": "高精度工业监控传感器系统",
-      "features": "高精度测量|无线传输|低功耗设计|即插即用|自动校准|防尘防水",
-      "specifications": "测量范围：温度-40℃~120℃，湿度0-100%RH|精度：温度±0.3℃，湿度±2%RH|采样率：1Hz-10Hz|通信：ZigBee/LoRa|电池寿命：>2年|防护等级：IP67"
-    }
-  },
-  "Layout": {
-    "siteName": "产品网站",
-    "siteDescription": "您值得信赖的优质产品来源",
-    "navigation": {
-      "home": "首页",
-      "products": "产品",
-      "about": "关于",
-      "contact": "联系"
-    }
-  },
-  "Blog": {
-    "pageTitle": "博客文章",
-    "pageDescription": "了解行业动态和专业见解",
-    "by": "作者",
-    "shareTitle": "分享文章",
-    "readMore": "阅读更多",
-    "postNotFound": "未找到文章",
-    "post1": {
-      "title": "工业4.0时代的智能制造解决方案",
-      "excerpt": "探索工业4.0时代的智能制造趋势和解决方案",
-      "content": "在工业4.0时代，智能制造正在重塑传统的工业生产和管理方式。|通过物联网技术、人工智能和大数据分析，企业可以实现生产过程的全面数字化和智能化。|我们的智能工业控制器和物联网网关产品正是为满足这一转型需求而开发。|通过部署这些智能设备，企业可以建立完整的数字工厂系统，实现生产效率的显著提升。",
-      "date": "2023-12-01",
-      "author": "张工程师"
-    },
-    "post2": {
-      "title": "物联网网关在智能工厂中的应用",
-      "excerpt": "物联网网关如何助力智能工厂转型",
-      "content": "物联网网关在智能工厂建设中扮演着关键角色。|它们作为现场设备和云平台之间的桥梁，实现数据的无缝采集和传输。|我们的物联网网关产品提供全面的协议支持和边缘计算能力。|通过实际案例，我们将探讨物联网网关如何帮助企业实现数字化转型。",
-      "date": "2023-12-05",
-      "author": "李工程师"
-    },
-    "post3": {
-      "title": "工业传感器技术发展趋势",
-      "excerpt": "工业传感器技术的最新发展动态",
-      "content": "工业传感器是智能制造的基础。|现代传感器技术将高精度与智能特性相结合。|我们的智能传感器套件集成了多种感知能力和无线通信。|本文分析当前传感器技术的发展趋势及其工业应用。",
-      "date": "2023-12-10",
-      "author": "王工程师"
-    }
-  },
-  "FAQ": {
-    "q1": "如何选择合适的产品？",
-    "a1": "我们建议您根据具体需求、预算和使用场景来选择产品。您可以查看产品详情页面的对比信息，或直接联系我们的客服团队获取专业建议。",
-    "q2": "产品是否提供保修服务？",
-    "a2": "是的，我们所有产品都提供标准保修服务。具体保修期限和条款请参考产品说明书或联系客服咨询。",
-    "q3": "如何获取技术支持？",
-    "a3": "您可以通过以下方式获取技术支持：1. 查看产品文档；2. 联系在线客服；3. 发送邮件至支持邮箱；4. 拨打技术支持热线。",
-    "q4": "是否提供定制服务？",
-    "a4": "是的，我们提供产品定制服务。请通过询单表单或直接联系我们的销售团队了解详情。",
-    "q5": "如何追踪订单状态？",
-    "a5": "登录您的账户后，可以在订单中心查看订单状态。您也可以通过订单编号联系客服查询。"
-  },
-  "InquiryForm": {
-    "defaultMessage": "请在下方填写您的询价信息",
-    "title": "产品询价",
-    "name": "您的姓名",
-    "email": "您的邮箱",
-    "message": "留言内容",
-    "submit": "发送询价",
-    "name": {
-      "label": "姓名",
-      "required": "请输入姓名"
-    },
-    "email": {
-      "label": "邮箱",
-      "required": "请输入有效的邮箱地址"
-    },
-    "company": {
-      "label": "公司",
-      "required": "请输入公司名称"
-    },
-    "message": {
-      "label": "留言",
-      "required": "请输入留言内容"
-    },
-    "submit": "发送询盘",
-    "success": "感谢您的询盘，我们将尽快与您联系。",
-    "error": "发生错误，请重试。"
   }
 }
