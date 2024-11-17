@@ -3,10 +3,12 @@ import { Inter } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
+import { getMessages } from '@/lib/get-messages'
+import { Suspense } from 'react'
 
 import { locales } from '@/i18n/config'
-import { getMessages } from '@/lib/get-messages'
 import Navigation from '@/components/Navigation'
+import Breadcrumb from '@/components/Breadcrumb'
 import Footer from '@/components/Footer'
 import '@/styles/globals.css'
 import '@/styles/critical.css'
@@ -53,19 +55,24 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   }
 }
 
+type RootLayoutProps = {
+  children: React.ReactNode
+  params: { locale: (typeof locales)[number] }
+}
+
 export default async function RootLayout({
   children,
   params: { locale },
-}: {
-  children: React.ReactNode
-  params: { locale: string }
-}) {
+}: RootLayoutProps) {
   setRequestLocale(locale);
+
+  if (!locales.includes(locale)) notFound()
 
   let messages
   try {
     messages = await getMessages(locale)
   } catch (error) {
+    console.error('Error loading messages:', error)
     notFound()
   }
 
@@ -75,7 +82,12 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages} locale={locale}>
           <div className="flex min-h-screen flex-col">
             <Navigation />
-            <main className="flex-grow">{children}</main>
+            <Suspense fallback={null}>
+              <Breadcrumb />
+            </Suspense>
+            <main className="flex-grow">
+              {children}
+            </main>
             <Footer />
           </div>
         </NextIntlClientProvider>
