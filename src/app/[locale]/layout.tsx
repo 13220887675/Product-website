@@ -1,31 +1,56 @@
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
-import { notFound } from 'next/navigation'
 import { NextIntlClientProvider } from 'next-intl'
+import { notFound } from 'next/navigation'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
+
+import { locales } from '@/i18n/config'
+import { getMessages } from '@/lib/get-messages'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import '@/styles/globals.css'
+import '@/styles/critical.css'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: {
-    template: '%s | Your Company Name',
-    default: 'Your Company Name - Professional Products and Solutions',
-  },
-  description: 'Professional products and solutions for your business needs',
-  openGraph: {
-    title: 'Your Company Name',
-    description: 'Professional products and solutions for your business needs',
-    url: 'https://your-domain.com',
-    siteName: 'Your Company Name',
-    locale: 'en_US',
-    type: 'website',
-  },
-}
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true,
+  fallback: [
+    '-apple-system',
+    'BlinkMacSystemFont',
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    'sans-serif',
+  ],
+})
 
 export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'zh' }]
+}
+
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations('Layout')
+
+  return {
+    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://your-domain.com'),
+    title: {
+      template: `%s | ${t('siteName')}`,
+      default: t('siteName'),
+    },
+    description: t('siteDescription'),
+    alternates: {
+      languages: {
+        'en': '/en',
+        'zh': '/zh',
+      },
+    },
+  }
 }
 
 export default async function RootLayout({
@@ -35,18 +60,20 @@ export default async function RootLayout({
   children: React.ReactNode
   params: { locale: string }
 }) {
+  setRequestLocale(locale);
+
   let messages
   try {
-    messages = (await import(`../../messages/${locale}.json`)).default
+    messages = await getMessages(locale)
   } catch (error) {
     notFound()
   }
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body className={inter.className}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="min-h-screen flex flex-col">
+        <NextIntlClientProvider messages={messages} locale={locale}>
+          <div className="flex min-h-screen flex-col">
             <Navigation />
             <main className="flex-grow">{children}</main>
             <Footer />

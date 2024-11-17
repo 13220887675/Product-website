@@ -1,8 +1,12 @@
 {
   "Metadata": {
+    "titleTemplate": "%s | Your Company",
+    "defaultTitle": "Your Company - Industrial Products Manufacturer",
+    "description": "Leading manufacturer of high-quality industrial products and solutions",
+    "siteName": "Your Company",
     "Home": {
-      "title": "Product Showcase - Professional Solutions",
-      "description": "Discover our innovative products and solutions that bring more possibilities to your business."
+      "title": "Your Company - Industrial Products Manufacturer",
+      "description": "Welcome to Your Company - Leading manufacturer of high-quality industrial products and solutions"
     }
   },
   "Navigation": {
@@ -34,82 +38,76 @@
     "switchLanguage": "Switch Language"
   },
   "Home": {
-    "hero": {
-      "title": "Innovative Products, Smart Choice",
-      "description": "Explore our product line and discover professional solutions that fit your needs.",
-      "cta": "Learn More"
-    },
-    "products": {
-      "title": "Featured Products",
-      "description": "Browse our star products and see how they meet your needs.",
-      "viewAll": "View All Products"
-    },
-    "blog": {
-      "title": "Latest Updates",
-      "description": "Learn about industry trends and product usage tips.",
-      "viewAll": "View All Articles"
-    },
-    "faq": {
-      "title": "FAQ",
-      "description": "Find answers to your most important questions."
-    },
-    "inquiry": {
-      "title": "Contact Us",
-      "description": "Have questions? Feel free to reach out."
-    }
+    "heroTitle": "Leading Industrial Solutions",
+    "heroSubtitle": "Quality Products for Your Business",
+    "heroCta": "Explore Products",
+    "featuredProducts": "Featured Products",
+    "featuredProductsDescription": "Discover our most popular industrial solutions",
+    "featuredProductsViewAll": "View All Products",
+    "latestBlog": "Latest News",
+    "latestBlogDescription": "Stay updated with our latest industry insights",
+    "latestBlogViewAll": "View All Posts",
+    "faqTitle": "Frequently Asked Questions",
+    "faqDescription": "Find answers to common questions about our products and services",
+    "contactTitle": "Contact Us",
+    "contactDescription": "Get in touch with our team for personalized assistance"
   },
   "Products": {
+    "pageTitle": "Our Products",
+    "pageDescription": "Browse our complete product catalog",
     "features": "Features",
     "specifications": "Specifications",
+    "readMore": "Read More",
+    "learnMore": "Learn More",
     "inquiryTitle": "Product Inquiry",
+    "productNotFound": "Product Not Found",
     "product1": {
       "name": "Smart Industrial Controller",
-      "description": "Advanced industrial automation control system for production lines and industrial equipment",
+      "description": "Advanced control system for industrial automation",
       "features": "High-precision control|Real-time monitoring|Remote operation|Data analysis|Fault prediction|Modular design",
       "specifications": "Processor: ARM Cortex-A53|Memory: 4GB DDR4|Storage: 32GB eMMC|Interfaces: 4×RS485, 2×CAN, 4×DI, 4×DO|Operating temperature: -20℃~70℃|Protection: IP65"
     },
     "product2": {
-      "name": "Industrial IoT Gateway",
-      "description": "High-performance industrial IoT data collection and transmission gateway supporting multiple protocols and interfaces",
+      "name": "IoT Gateway",
+      "description": "Industrial-grade IoT data collection and transmission gateway",
       "features": "Multi-protocol support|Edge computing|Security encryption|Remote management|Data caching|System monitoring",
       "specifications": "CPU: Quad-core 1.5GHz|Memory: 2GB|Storage: 16GB|Network: 2×Gigabit Ethernet, Wi-Fi, 4G|Protocols: Modbus, OPC UA, MQTT|Power: 9-36V DC"
     },
     "product3": {
       "name": "Smart Sensor Kit",
-      "description": "Industrial-grade smart sensor system including temperature, humidity, pressure, and various other sensors",
+      "description": "High-precision sensor system for industrial monitoring",
       "features": "High-precision measurement|Wireless transmission|Low power design|Plug and play|Auto calibration|Dust and water resistant",
       "specifications": "Measurement range: Temperature -40℃~120℃, Humidity 0-100%RH|Accuracy: Temperature ±0.3℃, Humidity ±2%RH|Sampling rate: 1Hz-10Hz|Communication: ZigBee/LoRa|Battery life: >2 years|Protection: IP67"
-    },
-    "learnMore": "Learn More"
+    }
   },
   "Blog": {
+    "pageTitle": "Blog Posts",
+    "pageDescription": "Industry insights and professional perspectives",
     "by": "by",
     "shareTitle": "Share Article",
+    "readMore": "Read More",
+    "postNotFound": "Blog Post Not Found",
     "post1": {
       "title": "Smart Manufacturing Solutions in Industry 4.0",
       "excerpt": "Exploring smart manufacturing trends and solutions in the Industry 4.0 era",
       "content": "In the Industry 4.0 era, smart manufacturing is reshaping traditional industrial production and management methods.|Through IoT technology, artificial intelligence, and big data analytics, enterprises can achieve comprehensive digitalization and intelligence of production processes.|Our smart industrial controllers and IoT gateway products are developed specifically to meet this transformation need.|By deploying these smart devices, enterprises can establish a complete digital factory system and achieve significant improvements in production efficiency.",
       "date": "2023-12-01",
-      "author": "Engineer Zhang",
-      "tags": "Industry 4.0,Smart Manufacturing,IoT,Digital Transformation"
+      "author": "Engineer Zhang"
     },
     "post2": {
-      "title": "Industrial IoT Security Protection Guide",
-      "excerpt": "Detailed analysis of security threats and protection measures in industrial IoT environments",
-      "content": "With the rapid development of industrial IoT, security issues have become a key concern for enterprises.|Industrial control systems face security threats from network attacks, data breaches, and more.|This article will detail common security risks in industrial IoT environments and provide practical protection recommendations.|Through the adoption of encrypted transmission, access control, and other security measures, enterprises can effectively protect their industrial IoT systems.",
+      "title": "IoT Gateway Applications in Smart Factories",
+      "excerpt": "How IoT gateways are enabling smart factory transformations",
+      "content": "IoT gateways play a crucial role in smart factory construction.|They serve as the bridge between field devices and cloud platforms, enabling seamless data collection and transmission.|Our IoT gateway products provide comprehensive protocol support and edge computing capabilities.|Through practical case studies, we'll explore how IoT gateways help enterprises achieve digital transformation.",
       "date": "2023-12-05",
-      "author": "Engineer Li",
-      "tags": "Cybersecurity,IoT,Industrial Control,Security Protection"
+      "author": "Engineer Li"
     },
     "post3": {
-      "title": "Smart Sensor Applications in Industrial Monitoring",
-      "excerpt": "Analyzing innovative applications of smart sensors in industrial monitoring",
-      "content": "Smart sensors, as the perception layer of industrial IoT, play a crucial role in industrial monitoring.|By deploying temperature, humidity, pressure, and various other sensors, enterprises can monitor production environments and equipment status in real-time.|Combined with big data analytics and AI technology, smart sensor systems can predict equipment failures and optimize maintenance schedules.|This article will demonstrate through practical cases how smart sensors help enterprises improve production efficiency and equipment reliability.",
+      "title": "Industrial Sensor Technology Trends",
+      "excerpt": "Latest developments in industrial sensor technology",
+      "content": "Industrial sensors are the foundation of smart manufacturing.|Modern sensor technology combines high precision with intelligent features.|Our smart sensor kit integrates multiple sensing capabilities with wireless communication.|This article analyzes current trends in sensor technology and their industrial applications.",
       "date": "2023-12-10",
-      "author": "Engineer Wang",
-      "tags": "Sensors,Industrial Monitoring,Predictive Maintenance,IoT"
-    },
-    "readMore": "Read More"
+      "author": "Engineer Wang"
+    }
   },
   "FAQ": {
     "q1": "How to choose the right product?",
@@ -124,6 +122,12 @@
     "a5": "You can check order status in the order center after logging into your account. You can also contact customer service with your order number."
   },
   "InquiryForm": {
+    "defaultMessage": "Please fill in your inquiry details below",
+    "title": "Product Inquiry",
+    "name": "Your Name",
+    "email": "Your Email",
+    "message": "Message",
+    "submit": "Send Inquiry",
     "name": {
       "label": "Name",
       "required": "Please enter your name"
@@ -140,8 +144,21 @@
       "label": "Message",
       "required": "Please enter your message"
     },
-    "submit": "Send Inquiry",
     "success": "Thank you for your inquiry. We will contact you soon.",
     "error": "An error occurred. Please try again."
+  },
+  "Index": {
+    "title": "Welcome to Our Product Website",
+    "description": "Discover our innovative products"
+  },
+  "Layout": {
+    "siteName": "Product Website",
+    "siteDescription": "Your trusted source for quality products",
+    "navigation": {
+      "home": "Home",
+      "products": "Products",
+      "about": "About",
+      "contact": "Contact"
+    }
   }
 }

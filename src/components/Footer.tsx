@@ -1,8 +1,14 @@
-import { useTranslations } from 'next-intl'
+'use client'
+
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 export default function Footer() {
   const t = useTranslations('Footer')
+
+  const getLocalizedHref = (href: string) => {
+    return `/${href}`
+  }
 
   return (
     <footer className="bg-gray-900 text-white">
@@ -16,7 +22,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">{t('products')}</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/products" className="text-gray-400 hover:text-white">
+                <Link href={getLocalizedHref('/products')} className="text-gray-400 hover:text-white">
                   {t('allProducts')}
                 </Link>
               </li>
@@ -26,7 +32,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">{t('resources')}</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/blog" className="text-gray-400 hover:text-white">
+                <Link href={getLocalizedHref('/blog')} className="text-gray-400 hover:text-white">
                   {t('blog')}
                 </Link>
               </li>
