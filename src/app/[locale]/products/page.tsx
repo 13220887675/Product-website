@@ -5,12 +5,11 @@ import Link from 'next/link'
 import { getAllProducts } from '@/lib/content'
 import { locales } from '@/i18n/config'
 
-const defaultProductImage = '/images/defaults/default-product.jpg'  // 确保这个文件存在
+const defaultProductImage = '/images/defaults/default-product.jpg'
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const t = await getTranslations('Products')
   
-  // 生成所有语言的替代链接
   const alternateUrls = locales.reduce((acc, locale) => {
     acc[locale] = `/${locale}/products`
     return acc
@@ -51,13 +50,6 @@ export default async function ProductsPage({ params }: Props) {
   const t = await getTranslations('Products')
   const products = await getAllProducts(params.locale)
 
-  // 处理图片路径，确保使用正确的格式
-  const getImagePath = (imagePath: string | undefined) => {
-    if (!imagePath) return defaultProductImage
-    // 直接返回图片路径，因为它已经是正确的格式了
-    return imagePath
-  }
-
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-8">{t('pageTitle')}</h1>
@@ -70,12 +62,12 @@ export default async function ProductsPage({ params }: Props) {
           >
             <div className="relative h-64 mb-4 overflow-hidden rounded-lg">
               <Image
-                src={getImagePath(product.image)}
+                src={product.image || defaultProductImage}
                 alt={product.name}
-                width={800}
-                height={600}
-                className="object-cover w-full h-full transition-transform group-hover:scale-105"
-                unoptimized
+                fill
+                className="object-cover transition-transform group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                priority={index < 3}
               />
             </div>
             <h2 className="text-xl font-semibold mb-2">{product.name}</h2>

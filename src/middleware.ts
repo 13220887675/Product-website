@@ -13,9 +13,9 @@ export const config = {
     // Match all pathnames except for
     // - /api (API routes)
     // - /_next (Next.js internals)
-    // - /static (inside /public)
+    // - /images (public images)
     // - /.well-known
     // - favicon.ico, sitemap.xml, robots.txt
-    '/((?!api|_next|static|.well-known|favicon.ico|sitemap.xml|robots.txt).*)'
+    '/((?!api|_next|images|.well-known|favicon.ico|sitemap.xml|robots.txt).*)'
   ]
 }
