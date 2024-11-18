@@ -26,8 +26,10 @@
     "faq": "常见问题",
     "about": "关于我们",
     "contact": "联系方式",
+    "toggleMenu": "切换导航菜单",
     "openMenu": "打开菜单",
-    "closeMenu": "关闭菜单"
+    "closeMenu": "关闭菜单",
+    "mobileMenu": "导航菜单"
   },
   "Home": {
     "title": "创新产品解决方案",

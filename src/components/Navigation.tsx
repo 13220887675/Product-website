@@ -80,7 +80,11 @@ export default function Navigation() {
             <button
               onClick={toggleDrawer}
               className="md:hidden p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+              aria-expanded={isDrawerOpen}
+              aria-controls="mobile-menu"
+              aria-label={t('toggleMenu')}
             >
+              <span className="sr-only">{isDrawerOpen ? t('closeMenu') : t('openMenu')}</span>
               {isDrawerOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
@@ -90,27 +94,49 @@ export default function Navigation() {
       {/* 移动端抽屉菜单 */}
       {isDrawerOpen && (
         <div className="fixed inset-0 z-50 md:hidden">
-          <div className="fixed inset-0 bg-black bg-opacity-50" onClick={() => setIsDrawerOpen(false)} />
-          <div className="fixed right-0 top-0 bottom-0 w-64 bg-white dark:bg-gray-900 p-4">
-            {navLinks.map(({ href, label }) => (
-              <Link
-                key={href}
-                href={getLocalizedHref(href)}
-                className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
-                onClick={() => setIsDrawerOpen(false)}
-              >
-                {t(label)}
-              </Link>
-            ))}
-            <div className="px-4 py-2">
-              <Suspense fallback={<div className="w-8 h-8 bg-gray-200 dark:bg-gray-700 animate-pulse rounded-full" />}>
-                <ThemeSwitcher />
-              </Suspense>
-            </div>
-            <div className="px-4 py-2">
-              <Suspense fallback={<div className="w-24 h-8 bg-gray-200 dark:bg-gray-700 animate-pulse rounded" />}>
-                <LanguageSwitcher locale={locale} />
-              </Suspense>
+          {/* 遮罩层按钮 */}
+          <button 
+            className="fixed inset-0 bg-black bg-opacity-50" 
+            onClick={() => setIsDrawerOpen(false)}
+            aria-label={t('closeMenu')}
+          />
+          <div 
+            id="mobile-menu"
+            className="fixed right-0 top-0 bottom-0 w-64 bg-white dark:bg-gray-900 p-4"
+            role="dialog"
+            aria-modal="true"
+            aria-label={t('mobileMenu')}
+          >
+            {/* 关闭按钮 */}
+            <button
+              onClick={() => setIsDrawerOpen(false)}
+              className="absolute top-4 right-4 p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+              aria-label={t('closeMenu')}
+            >
+              <X className="h-6 w-6" />
+            </button>
+            
+            <div className="mt-12">
+              {navLinks.map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={getLocalizedHref(href)}
+                  className="block px-4 py-2 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+                  onClick={() => setIsDrawerOpen(false)}
+                >
+                  {t(label)}
+                </Link>
+              ))}
+              <div className="px-4 py-2">
+                <Suspense fallback={<div className="w-8 h-8 bg-gray-200 dark:bg-gray-700 animate-pulse rounded-full" />}>
+                  <ThemeSwitcher />
+                </Suspense>
+              </div>
+              <div className="px-4 py-2">
+                <Suspense fallback={<div className="w-24 h-8 bg-gray-200 dark:bg-gray-700 animate-pulse rounded" />}>
+                  <LanguageSwitcher locale={locale} />
+                </Suspense>
+              </div>
             </div>
           </div>
         </div>

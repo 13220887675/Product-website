@@ -26,8 +26,10 @@
     "about": "About Us",
     "contact": "Contact",
     "faq": "FAQ",
-    "openMenu": "Open Menu",
-    "closeMenu": "Close Menu"
+    "toggleMenu": "Toggle navigation menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobileMenu": "Navigation menu"
   },
   "Home": {
     "title": "Innovative Product Solutions",
