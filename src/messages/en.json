@@ -137,6 +137,7 @@
     "toggleTheme": "Toggle Theme"
   },
   "LanguageSwitcher": {
+    "selectLanguage": "Select language",
     "switchLanguage": "Switch Language"
   }
 }

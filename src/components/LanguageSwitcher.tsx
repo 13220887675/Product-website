@@ -22,13 +22,19 @@ export default function LanguageSwitcher({ locale }: Props) {
 
   return (
     <div className="relative inline-block text-left">
+      <label htmlFor="language-select" className="sr-only">
+        {t('selectLanguage')}
+      </label>
       <select
+        id="language-select"
+        name="language"
         value={locale}
         onChange={(e) => switchLocale(e.target.value)}
         className="block w-full px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary dark:bg-gray-800 dark:text-gray-200 dark:border-gray-600"
+        aria-label={t('selectLanguage')}
       >
-        <option value="en">English</option>
-        <option value="zh">中文</option>
+        <option value="en" lang="en">English</option>
+        <option value="zh" lang="zh">中文</option>
       </select>
     </div>
   )
