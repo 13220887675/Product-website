@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { getMessages } from '@/lib/get-messages'
 import { Suspense } from 'react'
+import { headers } from 'next/headers'
 
 import { locales } from '@/i18n/config'
 import Navigation from '@/components/Navigation'
@@ -38,15 +39,20 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const t = await getTranslations('Layout')
+  const headersList = headers()
+  const host = headersList.get('host') || process.env.NEXT_PUBLIC_BASE_URL || 'localhost:3000'
+  const protocol = process.env.NODE_ENV === 'development' ? 'http' : 'https'
+  const baseUrl = `${protocol}://${host}`
 
   return {
-    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://your-domain.com'),
+    metadataBase: new URL(baseUrl),
     title: {
       template: `%s | ${t('siteName')}`,
       default: t('siteName'),
     },
     description: t('siteDescription'),
     alternates: {
+      canonical: `${baseUrl}/${params.locale}`,
       languages: {
         'en': '/en',
         'zh': '/zh',
