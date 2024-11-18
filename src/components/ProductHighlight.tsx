@@ -39,7 +39,8 @@ export default function ProductHighlight({ product, locale }: Props) {
           href={`/${locale}/products/${product.id}`}
           className="inline-block bg-primary hover:bg-primary-dark text-white px-4 py-2 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-800"
         >
-          {t.learnMore}
+          <span>{t.learnMore}</span>
+          <span className="sr-only"> - {product.name}</span>
         </Link>
       </div>
     </div>
