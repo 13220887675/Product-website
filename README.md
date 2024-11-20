@@ -9,6 +9,14 @@
 - next-intl（国际化）
 - Tailwind CSS（样式）
 
+## 在线演示
+https://product-website-peach.vercel.app
+
+## Lighthouse分数
+移动端
+![alt text](image.png)
+桌面端
+![alt text](image-1.png)
 ## 项目结构
 
 ```
